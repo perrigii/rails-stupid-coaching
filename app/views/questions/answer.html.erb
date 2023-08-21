@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="card">
+  <div class="card-header">
+    Question
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= params[:question] %></p>
+      <footer class="blockquote-footer">You</footer>
+    </blockquote>
+  </div>
+
+
+  <div class="card">
+  <div class="card-header">
+    Answer
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= @answer %></p>
+      <footer class="blockquote-footer">Coach</footer>
+    </blockquote>
+  </div>
+</div>
+
+<%= link_to "Pergunte alguma coisa!", ask_path %>
